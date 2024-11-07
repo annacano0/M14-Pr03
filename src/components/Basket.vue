@@ -1,9 +1,11 @@
 <script setup>
+import {ref} from 'vue'
 
+const order=ref([])
 </script>
 
 <template>
-  <p>This is the users' basket</p>
+  <p v-for="(product, index) in order" :key="index" :product="product">{{ orderElement }}</p>
 </template>
 
 <style scoped>

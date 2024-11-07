@@ -5,8 +5,10 @@ import MenuList from './MenuList.vue'
 const title = ref('This is the title')
 
 const placeOrder = () => {
-  console.log("click en place order")
+  alert("Confirm your order:")
 }
+
+const currentOrder=ref([])
 
 const currency = ref('')
 provide('currency', currency)
